@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+#PBS -N TCN
+#PBS -A WYOM0219
+#PBS -q casper
+#PBS -l select=1:ncpus=8:mem=32GB
+#PBS -l walltime=11:30:00
+#PBS -J 3-4
+#PBS -o logs/
+#PBS -e logs/
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+export OMP_NUM_THREADS=16
+export MKL_NUM_THREADS=16
+export OPENBLAS_NUM_THREADS=16
+
+module load conda
+conda activate Elham_kernel1
+
+python run_tcn_experiment_all.py ${PBS_ARRAY_INDEX}

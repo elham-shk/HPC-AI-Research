@@ -1,0 +1,240 @@
+=== Experiment 0 REJECTED ===
+nb_filters: 128
+kernel_size: 9
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32, 64]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: True
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 256
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 10
+mse: 0.004589731429899729
+rmse: 0.06774755663416747
+mae: 0.024145285494163393
+r2: 0.7930510299211084
+pearson: 0.8949369291909155
+
+=== Experiment 1  ===
+nb_filters: 128
+kernel_size: 19
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32, 64]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: True
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 128
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 8
+mse: 0.005174526668244542
+rmse: 0.07193418289133853
+mae: 0.027273316780009788
+r2: 0.7666828700122087
+pearson: 0.8903319064847626
+
+=== Experiment 2  ===
+nb_filters: 128
+kernel_size: 15
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32, 64]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: False
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 128
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 10
+mse: 0.005058360764306335
+rmse: 0.07112215382218352
+mae: 0.025105345201295114
+r2: 0.771920739492258
+pearson: 0.8794809438179488
+
+=== Experiment 1  ===
+nb_filters: 128
+kernel_size: 15
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32, 64]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: True
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 256
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 10
+mse: 0.004597690202642045
+rmse: 0.06780626964110358
+mae: 0.025508308702539072
+r2: 0.7926921723610811
+pearson: 0.8909350950724012
+
+=== Experiment 2  ===
+nb_filters: 128
+kernel_size: 11
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: False
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 128
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 8
+mse: 0.004592739473152648
+rmse: 0.06776975337975377
+mae: 0.02776798588124783
+r2: 0.7929153985747753
+pearson: 0.8917182756039765
+
+=== Experiment 3  ===
+nb_filters: 128
+kernel_size: 9
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: True
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 256
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 9
+mse: 0.004047737478334413
+rmse: 0.06362183177443426
+mae: 0.0245160533012631
+r2: 0.8174892986474075
+pearson: 0.9061478846602209
+
+=== Experiment 4  ===
+nb_filters: 128
+kernel_size: 19
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: True
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 128
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 10
+mse: 0.00426864677066724
+rmse: 0.06533488172995525
+mae: 0.026077914521781487
+r2: 0.8075285958857354
+pearson: 0.8990395124419568
+
+=== Experiment 5  ===
+nb_filters: 128
+kernel_size: 3
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32, 64]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: False
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 128
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 10
+mse: 0.007082476172687233
+rmse: 0.0841574487059062
+mae: 0.03280546113707246
+r2: 0.6806542666096839
+pearson: 0.8303882347458035
+
+=== Experiment 6  ===
+nb_filters: 128
+kernel_size: 19
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: True
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 256
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 10
+mse: 0.00402929392520231
+rmse: 0.06347671955293775
+mae: 0.02426493627276535
+r2: 0.8183209103405055
+pearson: 0.9055993522415151
+
+=== Experiment 7  ===
+nb_filters: 128
+kernel_size: 17
+nb_stacks: 6
+dilations: [1, 2, 4, 8, 16, 32, 64]
+dropout_rate: 0.0
+padding: causal
+return_sequences: False
+use_skip_connections: True
+use_batch_norm: False
+use_layer_norm: False
+go_backwards: False
+return_state: False
+batch_size: 128
+dense_units: 256
+dense_activation: relu
+dense_dropout: 0.0
+num_dense_layers: 8
+mse: 0.004987621754248415
+rmse: 0.07062309646460155
+mae: 0.026868178731557137
+r2: 0.7751103303211504
+pearson: 0.8810068782371552
+
