@@ -1,2 +1,1 @@
-**Exploring Temporal Convolutional Networks (TCNs) for time-series prediction tasks.  
-This work is inspired by the original TCN framework introduced by Bai et al. (2018) — [Google Scholar link](https://scholar.google.com/scholar_lookup?title=An+Empirical+Evaluation+of+Generic+Convolutional+and+Recurrent+Networks+for+Sequence+Modeling&author=Shaojie+Bai&author=J.+Zico+Kolter&author=Vladlen+Koltun&publication_year=2018).**
+** Exploring Temporal Convolutional Networks (TCNs) for time-series prediction tasks **. This work is inspired by the original TCN framework introduced by Bai et al. (2018) — Google Scholar link
