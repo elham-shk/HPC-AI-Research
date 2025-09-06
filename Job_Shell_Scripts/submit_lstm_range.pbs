@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N LSTM_Model
+#PBS -A WYOM0219
+#PBS -q main
+#PBS -l select=1:ncpus=16:mem=180GB
+#PBS -l walltime=11:50:00
+#PBS -J 5001-6000
+#PBS -o logs/
+#PBS -e logs/
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+module load conda
+conda activate Elham_kernel1
+
+python run_lstm_model1.py ${PBS_ARRAY_INDEX}

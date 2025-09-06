@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N matlab_job
+#PBS -A WYOM0219
+#PBS -q casper
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=4:mem=10GB
+#PBS -j oe
+#PBS -o local.log
+
+module purge
+module load matlab
+
+cd $PBS_O_WORKDIR
+
+matlab -nodisplay -nosplash -r "Frankel"
+ 
