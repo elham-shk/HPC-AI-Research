@@ -35,7 +35,7 @@ from tcn import TCN
 from tcn_configs import tcn_configs
 
 
-#  logs/ folder exists (optional, for safety)
+#  logs/ folder exists
 #os.makedirs("logs", exist_ok=True)
 
 #  results/ folder exists
@@ -51,8 +51,7 @@ tf.config.threading.set_inter_op_parallelism_threads(ncpus)
 
 seed = 42
 np.random.seed(seed)
-random.seed(seed)
-tf.random.set_seed(seed)
+
 
 
 
@@ -102,7 +101,7 @@ def config_hash(cfg):
 
 def load_tested_configs(file_path):
     """
-    Parse your results/tcn_metrics_new.txt,
+    Parse results/tcn_metrics_new.txt,
     split on “=== Experiment” and turn each block
     back into a dict of hyper‑parameters.
     """
@@ -120,7 +119,7 @@ def load_tested_configs(file_path):
             k = k.strip()
             v = v.strip()
             try:
-                # Try to convert to int, float, list, or bool
+                # convert to int, float, list, or bool
                 v = ast.literal_eval(v)
             except Exception:
                 # Fallback to stripped string
