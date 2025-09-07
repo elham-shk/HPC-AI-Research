@@ -19,8 +19,7 @@ from sklearn.metrics import r2_score
 
 seed = 42
 np.random.seed(seed)
-random.seed(seed)
-tf.random.set_seed(seed)
+
 
 
 
@@ -44,7 +43,7 @@ def normalize_config(cfg):
     normalized = {}
     for k, v in cfg.items():
         if isinstance(v, float):
-            # Round floats to avoid precision mismatch
+            # Round floats 
             normalized[k] = round(v, 6)
         elif isinstance(v, list):
             # Normalize each element in list
@@ -68,7 +67,7 @@ def config_hash(cfg):
 
 def load_tested_configs(file_path):
     """
-    Parse your results/tcn_metrics.txt,
+    Parse results/tcn_metrics.txt,
     split on “=== Experiment” and turn each block
     back into a dict of hyper‑parameters.
     """
@@ -86,7 +85,7 @@ def load_tested_configs(file_path):
             k = k.strip()
             v = v.strip()
             try:
-                # Try to convert to int, float, list, or bool
+                # convert to int, float, list, or bool
                 v = ast.literal_eval(v)
             except Exception:
                 # Fallback to stripped string
