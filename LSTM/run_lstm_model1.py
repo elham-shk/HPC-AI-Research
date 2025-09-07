@@ -67,7 +67,7 @@ def config_hash(cfg):
 
 def load_tested_configs(file_path):
     """
-    Parse results/tcn_metrics.txt,
+    Parse results/lstm_metrics_all.txt,
     split on “=== Experiment” and turn each block
     back into a dict of hyper‑parameters.
     """
