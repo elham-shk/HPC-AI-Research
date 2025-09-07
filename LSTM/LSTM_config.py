@@ -2,7 +2,7 @@ import itertools
 import random
 
 # Define hyperparameter search space
-# You can narrow these down later if needed
+# narrow these down later if needed
 num_layers_list         = [4, 5, 6,7,8]                          # Number of LSTM layers  #1 [1, 2, 3, 4, 5, 6]
 #units_list              = [32, 64, 128, 256, 512]                # Units per LSTM layer
 units_list = [
